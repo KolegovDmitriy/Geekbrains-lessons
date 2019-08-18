@@ -1,0 +1,537 @@
+/*==========Весь html документ===== */
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #aaf;
+}
+
+/* ============Header=========== */
+
+
+.header{ 
+
+    float: left;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100px;
+
+    border-bottom: 2px solid #05694e;
+    background-color: #078c69;
+}
+
+
+
+.logo{ 
+
+    float: left;
+    display: inline-block;
+
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+
+    background-image: url('img/logo.png');
+    background-size: cover;
+}
+
+
+.header h3{  
+
+    float: left;
+    display: inline-block;
+
+    margin-top: 10px;
+    margin-left: 500px;
+}
+
+/*======= Меню header=========*/
+/*.all_button_header
+{
+    display: flex;
+
+    margin-top: 40px;
+    margin-left: 150px;
+
+    }
+*/
+.all_button_header{
+    
+    display: block;
+    font-weight: 500;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.all_button_header li a{
+      color: black;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+}
+
+
+
+.button{
+    text-align: center;
+    list-style: none;
+    line-height: 30px;
+    width: 150px;
+    height: 30px;
+    border-width: 0;
+}
+
+
+
+.button1
+{
+    background-color: #0096d6;
+    background-image: -webkit-linear-gradient(top, #0096d6, #008ac6);
+    background-image:    -moz-linear-gradient(top, #0096d6, #008ac6);
+    background-image:         linear-gradient(top, #0096d6, #008ac6);
+}
+
+
+.button2
+{
+    margin-left: 50px;
+
+    background-color: #00b274;
+    background-image: -webkit-linear-gradient(top, #00b274, #00a46b);
+    background-image:    -moz-linear-gradient(top, #00b274, #00a46b);
+    background-image:         linear-gradient(top, #00b274, #00a46b);
+}
+
+
+.button3
+{
+    margin-left: 50px;
+
+    background-color: #d75ba2;
+    background-image: -webkit-linear-gradient(top, #d75ba2, #c75496);
+    background-image:    -moz-linear-gradient(top, #d75ba2, #c75496);
+    background-image:         linear-gradient(top, #d75ba2, #c75496);
+}
+
+.button4
+{
+    margin-left: 50px;
+
+    background-color: #e9ac40;
+    background-image: -webkit-linear-gradient(top, #e9ac40, #d89f3b);
+    background-image:    -moz-linear-gradient(top, #e9ac40, #d89f3b);
+    background-image:         linear-gradient(top, #e9ac40, #d89f3b);
+}
+
+/*
+
+form{
+    display: inline-block;
+}*/
+
+/*======= Конец меню header=========*/
+/*============ Конец Header ========*/
+
+
+/*===========Контент========*/
+
+
+.content
+{
+    position: absolute;
+    top: 100px;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    margin-top: 2px;
+}
+
+/* =========Меню контента======*/
+
+
+.menu
+{
+    font-size: 15px;
+
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    display: inline-block;
+
+    width: 180px;
+    height: 400px;
+}
+
+
+.menu li{
+    
+    line-height: 36px;
+
+    width: 180px;
+    height: 36px;
+    margin: 2px;
+
+    text-align: center;
+    text-decoration: none;
+
+    border: 2px solid #05694e;
+    background-color: #078c69;
+}
+
+.menu li a{
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.menu li :hover
+{
+    color: #e0f513;
+    background-color: #0a4232;
+}
+/* =====Конец меню контента=======*/
+
+
+
+
+/*===========Товары ==========*/
+
+.product
+{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 200px;
+
+    display: inline-block;
+
+    height: 100%;
+}
+
+
+.product li
+{
+    font-weight: 700;
+
+    display: inline-block;
+
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    margin-bottom: 30px;
+
+    list-style-type: none;
+
+    text-align: center;
+
+    outline: 2px solid #05694e;
+    background-color: #078c69;
+}
+
+.product li img
+{
+    max-width: 170px;
+    max-height: 330px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.product h4
+{
+    font-size: 20px;
+
+    display: inline-block;
+
+    margin-left: 10px;
+
+    text-align: left;
+
+    color: #9824DAFF;
+}
+
+.product button
+{
+    display: inline-block;
+
+    width: 90px;
+    margin-left: 20px;
+}
+
+.button_buy
+{
+    cursor: pointer;
+
+    border-radius: 10px;
+    outline: none;
+    background: #9bf20a;
+}
+
+
+.product a
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+
+.product a:hover
+{
+    color: #e0f513;
+    outline: 2px solid blue;
+    background-color: #0a4232;
+}
+
+/*========Конец блока товары=========*/
+
+
+/*============Footer===========*/
+
+.footer
+{
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+
+    border-top: 2px solid #05694e;
+    background: #078c69;
+}
+
+.footer h3
+{
+    font-size: 20px;
+
+    margin-top: 10px;
+
+    color: blue;
+}
+
+.footer h6
+{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+/*========Конец фотера========*/
+
+
+
+
+/*=======Стили для странички контакты=====*/
+
+
+
+.contacts
+{
+    font-size: 15px;
+    line-height: 25px;
+
+    
+
+    display: inline-block;
+
+    width: 380px;
+    margin-top: 10px;
+    margin-left: 220px;
+
+    text-align: justify;
+}
+
+.contacts h1
+{
+    font: small-caps sans-serif;
+
+    margin-top: 5px;
+
+    text-align: center;
+
+    color: #007896;
+}
+
+/*=========== Яндекс карта ===============*/
+
+iframe
+{
+    position: absolute;
+    top: 130px;
+    left: 650px;
+
+    display: block;
+
+    border: 2px dashed #007896;
+}
+/*========== Конец блока яндекс карты ====*/
+
+/*====== форма отправки сообщения========*/
+.send
+{
+    line-height: 30px;
+
+    position: absolute;
+    top: 330px;
+    left: 220px;
+
+    display: inline-block;
+
+    width: 400px;
+    padding-bottom: 0;
+}
+fieldset
+{
+    font-size: 22px;
+
+    height: 360px;
+
+    color: #0e074f;
+    border: 2px dotted #007896;
+}
+fieldset h3
+{
+    font-size: 20px;
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: black;
+}
+.send h3
+{
+    margin-left: 20px;
+}
+
+.send input
+{
+    font-size: 20px;
+
+    padding: 4px;
+
+    border: 3px outset blue;
+    background-color: #aaf;
+}
+
+.send input:focus
+{
+    background: #04f;
+}
+
+.input_name
+{
+    width: 280px;
+    margin-left: 15px;
+
+    text-transform: capitalize;
+
+    border-radius: 0 10px 0 10px ;
+    outline: none;
+    outline: none;
+}
+
+input[type='e-mail']
+{
+    width: 278px;
+
+    border-radius: 0 10px 0 10px ;
+    outline: none;
+}
+
+.input_theme
+{
+    width: 360px;
+    margin-left: 10px;
+
+    border-radius: 0 10px 0 10px ;
+    outline: none;
+}
+
+
+.send textarea
+{
+    font-family: cursive;
+    font-size: 25px;
+    line-height: 30px;
+
+    width: 350px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+
+    resize: none;
+
+    border: 3px outset blue;
+    background-color: #aaf;
+}
+
+.send textarea:focus
+{
+    background: #04f;
+}
+
+input[type='submit']
+{
+    display: inline-block;
+
+    width: 180px;
+    margin-left: 10px;
+    padding: 4px;
+
+    background-color: #2272f5;
+}
+
+input[type='reset']
+{
+    display: inline-block;
+
+    width: 180px;
+    margin-left: 10px;
+    padding: 4px;
+
+    background-color: #2272f5;
+}
+
+
+/*изменение цвет placeholder
+input::-webkit-input-placeholder {
+color: blue !important;
+}
+*/
+
+
+/*===== Конец формы отправки сообщения==*/
+
+/*Конец блока контакты*/
